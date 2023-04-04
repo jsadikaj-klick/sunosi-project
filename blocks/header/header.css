@@ -1,9 +1,12 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
-  width: 100%;
-  z-index: 2;
-  position: fixed;
+    background: #7410BE!important;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 999998!important;
+    -webkit-transition: height .4s;
+    transition: height .4s;
 }
 
 header nav {
@@ -16,7 +19,7 @@ header nav {
   gap: 0 2em;
   margin: auto;
   max-width: 1264px;
-  height: var(--nav-height);
+  height: 100%;
   padding: 0 1rem;
   font-family: var(--body-font-family);
 }
@@ -45,6 +48,7 @@ header nav[aria-expanded="true"] {
   header nav[aria-expanded="true"] {
     min-height: 0;
     overflow: visible;
+    max-width: 1060px
   }
 }
 
@@ -172,6 +176,8 @@ header nav .nav-sections ul  {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  position: relative;
+  top: 20px;
 }
 
 header nav .nav-sections ul > li {
@@ -201,6 +207,7 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
     padding-right: 16px;
     cursor: pointer;
+    color: #fff;
   }
 
   header nav .nav-sections .nav-drop::after {
@@ -234,6 +241,7 @@ header nav .nav-sections ul > li > ul > li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
+    color: #fff;
   }
 
   header nav .nav-sections > ul > li > ul {
@@ -248,7 +256,7 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     margin-top: 12px;
     padding: 1em;
-    background-color: var(--highlight-background-color);
+    background-color: rgb(92,6,140);
     white-space: initial;
   }
 
@@ -261,7 +269,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--highlight-background-color);
+    border-bottom: 8px solid rgb(92,6,140);
   }
 
   header nav .nav-sections > ul > li > ul > li {

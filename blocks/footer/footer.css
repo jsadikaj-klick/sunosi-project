@@ -1,7 +1,9 @@
 footer {
-  padding: 2rem;
-  background-color: var(--overlay-background-color);
-  font-size: var(--body-font-size-s);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #b051f7;
+  background: linear-gradient(0deg,#b051f7 0,#7410be 80%);
 }
 
 footer .footer {
