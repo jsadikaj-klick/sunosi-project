@@ -15,10 +15,10 @@ main .hero {
 }
 
 main .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
+  font-size: 42px;
+  line-height: 46px;
+  color: #7410BE;
+  font-family: Barlow,sans-serif;
 }
 
 main .hero picture {
